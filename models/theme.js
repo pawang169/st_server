@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ThemeSchema = Schema({
-    id : Number,
-    title : String
+    templateId : Number,
+    templateName : String,
+    templateTitle : String
 });
 
 module.exports = mongoose.model("themes",ThemeSchema);
